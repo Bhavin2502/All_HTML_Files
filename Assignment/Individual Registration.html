@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Individual Registration Form</title>
+    <style>
+      h1 {
+        color: red;
+        background-color: rgb(157, 177, 242);
+      }
+      h3 {
+        color: red;
+      }
+      table {
+        background-color: rgb(197, 249, 249);
+      }
+      button {
+        color: rgb(255, 255, 255);
+        background-color: rgb(16, 81, 137);
+      }
+      table {
+        border-radius: 13px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center" cellpadding="7" cellspacing="5">
+      <form action="backend.php" method="post">
+        <tr>
+          <th colspan="4"><h1>Individual Registration</h1></th>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <h3>User Particulars</h3>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="right">
+            <label for="Login ID"> Login ID</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Login ID"
+              id="Login ID"
+              placeholder="Username or Phone No."
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="right">
+            <label for="Password"> Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="Password"
+              id="Password"
+              placeholder="Password"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="right">
+            <label for="Confirm Password">Confirm Password</label>
+          </td>
+          <td>
+            <input
+              type="password"
+              name="Confirm Password"
+              id="Confirm Password"
+              placeholder="Re Enter Password"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="4"><h3>Personal Particulars</h3></td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="Salutation"> Salutation</label>
+          </td>
+          <td>
+            <select name="Salutation" id="Salutation">
+              <option value="Select">Select</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+            </select>
+          </td>
+          <td align="right"><label for="First name">First name</label></td>
+          <td>
+            <input
+              type="text"
+              name="First name"
+              id="First name"
+              placeholder="Name of Applicant"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right"><label for="Middle name">Middle name</label></td>
+          <td>
+            <input
+              type="text"
+              name="Middle name"
+              id="Middle name"
+              placeholder="Father name"
+            />
+          </td>
+          <td align="right"><label for="Last name">Last name</label></td>
+          <td>
+            <input
+              type="text"
+              name="Last name"
+              id="Last name"
+              placeholder="Surname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="Residental Status">Residental Status</label>
+          </td>
+          <td>
+            <select name="Residental Status" id="Residental Status">
+              <option value="Select">Select</option>
+              <option value="Resident">Resident</option>
+              <option value="Non - Resident">Non - Resident</option>
+            </select>
+          </td>
+          <td align="right"><label for="Country">Country</label></td>
+          <td>
+            <select name="Country" id="Country">
+              <option value="Select">Select</option>
+              <option value="India">India</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="America">America</option>
+              <option value="England">England</option>
+              <option value="Australia">Australia</option>
+              <option value="Africa">Africa</option>
+              <option value="Europe">Europe</option>
+              <option value="Russia">Russia</option>
+              <option value="China">China</option>
+              <option value="Korea">Korea</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="Date of Birth">Date of Birth</label>
+          </td>
+          <td>
+            <input type="date" name="Date of Birth" id="Date of Birth" />
+          </td>
+          <td align="right"><label for="Email">Email Address</label></td>
+          <td>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Type your Email ID"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td align="right"><label for="Mobile no.">Mobile no.</label></td>
+          <td>
+            <input
+              type="tel"
+              name="Country code"
+              id="Country code"
+              placeholder="+91"
+              size="2"
+            />
+            <input
+              type="tel"
+              name="Mobile no."
+              id="Mobile no."
+              placeholder="94******81"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <h3>Account Particulars</h3>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="Account no.">15 Digit Account no.</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Account no."
+              id="Account no."
+              placeholder="2003********326"
+            />
+          </td>
+          <td align="right"><label for="Nickname">Nickname</label></td>
+          <td>
+            <input
+              type="text"
+              name="Nickname"
+              id="Nickname"
+              placeholder="Enter your Nickname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <label for="Fund Transfer">Fund Transfer</label>
+          </td>
+          <td>
+            <select name="Fund Transfer" id="Fund Transfer">
+              <option value="Select Amount">Select Amount</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+              <option value="1500">1500</option>
+              <option value="2000">2000</option>
+              <option value="2500">2500</option>
+              <option value="3000">3000</option>
+              <option value="3500">3500</option>
+              <option value="5000">5000</option>
+              <option value="10000">10000</option>
+              <option value="15000">15000</option>
+              <option value="20000">20000</option>
+              <option value="50000">50000</option>
+              <option value="100000">100000</option>
+            </select>
+          </td>
+          <td align="right">
+            <label for="Transfer Range">Select Range for Transfer Money</label>
+          </td>
+          <td>
+            <input
+              type="range"
+              name="Transfer Range"
+              id="Transfer Range"
+              value="10"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <h2>Terms & Conditions</h2>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <h3>DECLARATION</h3>
+            <ol>
+              <li>
+                By using this service, you agree to abide by all applicable laws
+                and regulations in your jurisdiction.
+              </li>
+              <li>
+                The information provided by this service is for general
+                informational purposes only and should not be considered as
+                professional advice
+              </li>
+              <li>
+                We reserve the right to modify, suspend, or terminate this
+                service at any time without prior notice.
+              </li>
+              <li>
+                The user is responsible for maintaining the confidentiality of
+                their account and should not share their login credentials with
+                others.
+              </li>
+              <li>
+                Any misuse or unauthorized use of this service may result in the
+                termination of your account and potential legal action
+              </li>
+            </ol>
+          </td>
+        </tr>
+        <tr align="center">
+          <td></td>
+          <td><button>Submit</button></td>
+          <td><button>Reset</button></td>
+          <td></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

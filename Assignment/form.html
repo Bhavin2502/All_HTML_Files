@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form action="bachand.php" method="post">
+      <table>
+        <tr>
+          <td>
+            <label for="Firstname"> Firstname</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="firstname"
+              id="Firstname"
+              size="15"
+              placeholder="Firstname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Middlename"> Middlename</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Middlename"
+              id="Middlename"
+              size="15"
+              placeholder="Middlename"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Lastname"> Lastname</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              name="Lastname"
+              id="Lastname"
+              size="15"
+              placeholder="Lastname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Select Course">Select Course</label>
+          </td>
+          <td>
+            <select>
+              <option value="Course">Select</option>
+              <option value="BCA">BCA</option>
+              <option value="BBA">BBA</option>
+              <option value="B.Tech">B.Tech</option>
+              <option value="MBA">MBA</option>
+              <option value="MCA">MCA</option>
+              <option value="M.Tech">M.Tech</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Gender"> Gender</label></td>
+          <td>
+            <label for="Male">
+              Male
+              <input type="radio" name="Gender" value="Male" id="Male"
+            /></label>
+            <label for="Female">
+              Female
+              <input type="radio" name="Gender" value="Female" id="Female"
+            /></label>
+            <label for="Other">
+              Other
+              <input type="radio" name="Gender" value="Other" id="Other"
+            /></label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Phone No."> Phone No.</label></td>
+          <td>
+            <input type="tel" name="country code" value="+91" size="2" />
+            <input
+              type="tel"
+              name="Phone No."
+              id="Phone No."
+              placeholder="94******81"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Address"> Address</label></td>
+          <td>
+            <textarea
+              name="Address"
+              id="Address"
+              cols="70"
+              rows="7"
+              placeholder="Type your Address"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Email"> Email</label></td>
+          <td>
+            <input
+              type="email"
+              id="Email"
+              name="email"
+              placeholder="Type your mail id"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Enclose Documents"> Enclose Documents</label></td>
+          <td>
+            <label for="Pan">
+              <input type="checkbox" value="Pan" name="Pan Card" id="Pan" />Pan
+              Card
+            </label>
+            <label for="Aadhaar">
+              <input
+                type="checkbox"
+                value="Aadhaar"
+                name="Aadhaar Card"
+                id="Aadhaar"
+              />
+              Aadhaar Card</label
+            >
+            <label for="Voter">
+              <input
+                type="checkbox"
+                value="Voter"
+                name="Voter ID"
+                id="Voter"
+              />Voter ID</label
+            >
+            <label for="Ration">
+              <input
+                type="checkbox"
+                value="Ration"
+                name="Ration Card"
+                id="Ration"
+              />Ration Card</label
+            >
+            <label for="Marks">
+              <input
+                type="checkbox"
+                value="Marks"
+                name="Marksheets"
+                id="Marks"
+              />Marksheets</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Password"> Password</label></td>
+          <td>
+            <input
+              type="Password"
+              id="Password"
+              name="Password"
+              placeholder="Password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Re-type Password">Re-type Password</label></td>
+          <td>
+            <input
+              type="Password"
+              id="Re-type Password"
+              name="Re-type Password"
+              placeholder="Re-type Password"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
